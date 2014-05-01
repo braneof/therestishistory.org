@@ -114,16 +114,6 @@
       <a href="javascript:;" data-action="Go" class="go-next">next</a>
     </div>
 
-    <script>
- 
-    $( document ).ready(function() {
-        $( "a.go-next" ).click(function( event ) {
-            $.scrollTo({ top:800, left:0}, 800);
-            event.preventDefault();
-        });
-    });
- 
-    </script>
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
@@ -216,5 +206,18 @@
     <!-- Delete holder in production site -->
     <script src='javascripts/holder.js'></script>
     <script src='javascripts/jquery.scrollTo/1.4.11/jquery.scrollTo.min.js'></script>
+    
+    
+    <script>
+ 
+    $( document ).ready(function() {
+        $( "a.go-next" ).click(function( event ) {
+            $.scrollTo({ top:800, left:0}, 800);
+            event.preventDefault();
+        });
+    });
+ 
+    </script>
+
   </body>
 </html>
