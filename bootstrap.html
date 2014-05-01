@@ -110,7 +110,20 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div><!-- /.carousel -->
 
+    <div> style this div to have a background down arrow image
+      <a href="javascript:;" data-action="Go" class="go-next">next</a>
+    </div>
 
+    <script>
+ 
+    $( document ).ready(function() {
+        $( "a.go-next" ).click(function( event ) {
+            $.scrollTo({ top:800, left:0}, 800);
+            event.preventDefault();
+        });
+    });
+ 
+    </script>
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
@@ -193,6 +206,7 @@
     </div><!-- /.container -->
 
 
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -201,5 +215,6 @@
     <script src="javascripts/docs.min.js"></script>
     <!-- Delete holder in production site -->
     <script src='javascripts/holder.js'></script>
+    <script src='javascripts/jquery.scrollTo/1.4.11/jquery.scrollTo.min.js'></script>
   </body>
 </html>
