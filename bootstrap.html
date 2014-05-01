@@ -111,7 +111,7 @@
     </div><!-- /.carousel -->
 
     <div> style this div to have a background down arrow image
-      <a href="javascript:;" data-action="Go" class="go-next">next</a>
+      <a href="javascript:;" data-description="Go" class="go-next">next</a>
     </div>
 
 
@@ -212,7 +212,7 @@
  
     $( document ).ready(function() {
         $( "a.go-next" ).click(function( event ) {
-            $.scrollTo({ top:800, left:0}, 800);
+            $.scrollTo({ top:800, left:0}, 800, {easing:"easeOutQuad"});
             event.preventDefault();
         });
     });
