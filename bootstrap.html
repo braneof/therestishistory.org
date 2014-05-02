@@ -147,6 +147,9 @@
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
+      <div style="text-align: center;">
+        <a href="javascript:;" data-description="About me" class="go-next"><i class="fa fa-angle-down fa-3x"></i></a>
+      </div>
 
       <!-- START THE FEATURETTES -->
 
@@ -160,6 +163,10 @@
         <div class="col-md-5">
           <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
+      </div>
+
+      <div style="text-align: center;">
+        <a href="javascript:;" data-description="Oral histories" class="go-next"><i class="fa fa-angle-down fa-3x"></i></a>
       </div>
 
       <hr class="featurette-divider">
@@ -214,11 +221,18 @@
     
     
     <script>
-     
+
     $( document ).ready(function() {
         $( "a.go-next" ).click(function( event ) {
+          if( $(this).data('description') === "Go" )
             $.scrollTo({ top:600, left:0}, 500, {easing:"easeOutQuad"});
-            event.preventDefault();
+          else if( $(this).data('description') === "About me" )
+            $.scrollTo({ top:1200, left:0}, 500, {easing:"easeOutQuad"});
+          else if( $(this).data('description') === "Oral histories" )
+            $.scrollTo({ top:1700, left:0}, 500, {easing:"easeOutQuad"});
+          else
+            $.scrollTo({ top:0, left:0}, 500, {easing:"easeOutQuad"});
+          event.preventDefault();
         });
     });
  
