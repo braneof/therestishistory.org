@@ -11,7 +11,8 @@
     <title>Carousel Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -21,6 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -110,9 +112,11 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div><!-- /.carousel -->
 
-    <div> style this div to have a background down arrow image
-      <a href="javascript:;" data-description="Go" class="go-next">next</a>
+    <div style="text-align: center;">
+      <a href="javascript:;" data-description="Go" class="go-next"><i class="fa fa-angle-down fa-3x"></i></a>
     </div>
+
+
 
 
     <!-- Marketing messaging and featurettes
@@ -201,8 +205,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="javascripts/docs.min.js"></script>
     <!-- Delete holder in production site -->
     <script src='javascripts/holder.js'></script>
@@ -210,7 +214,7 @@
     
     
     <script>
- 
+     
     $( document ).ready(function() {
         $( "a.go-next" ).click(function( event ) {
             $.scrollTo({ top:600, left:0}, 500, {easing:"easeOutQuad"});
