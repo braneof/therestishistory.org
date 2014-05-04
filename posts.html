@@ -7,17 +7,41 @@ title: The Rest is History
   <h1>Blog Posts</h1>
 
   <ul class="posts">
-    {% assign post = site.posts.first %}
-    {% assign content = post.content %}
+    {% assign post1 = site.posts[1] %}
+    {% assign content1 = post.content %}
     <h1 class="entry-title">
     {% if page.title %}
         <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
     {% endif %}
     {% if post.title %}
-        <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ root_url }}{{ post.url }}">{{ post1.title }}</a>
     {% endif %}
     </h1>
-    <div class="entry-content">{{ content }}</div>
+    <div class="entry-content">{{ content1 }}</div>
+
+    {% assign post2 = site.posts[2] %}
+    {% assign content2 = post.content %}
+    <h1 class="entry-title">
+    {% if page.title %}
+        <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+    {% if post.title %}
+        <a href="{{ root_url }}{{ post.url }}">{{ post2.title }}</a>
+    {% endif %}
+    </h1>
+    <div class="entry-content">{{ content2 }}</div>
+
+    {% assign post3 = site.posts[3] %}
+    {% assign content3 = post.content %}
+    <h1 class="entry-title">
+    {% if page.title %}
+        <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+    {% if post.title %}
+        <a href="{{ root_url }}{{ post.url }}">{{ post3.title }}</a>
+    {% endif %}
+    </h1>
+    <div class="entry-content">{{ content3 }}</div>
   </ul>
 
   <ul class="posts">
