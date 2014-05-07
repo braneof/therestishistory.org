@@ -60,7 +60,7 @@ title: The Rest is History
       {% else %}
       <div class="item">
       {% endif %}
-      {% assign n = 8 - forloop.index %}
+      {% capture n %}{{ 8 | minus:forloop.index }}{% endcapture %}
         <img data-src="holder.js/900x500/auto/#{{ n }}{{ n }}{{ n }}:#{{ n }}a{{ n }}a{{ n }}a/text:{{ post.title }}" alt="{{ post.title }}">
         <div class="container">
           <div class="carousel-caption">
