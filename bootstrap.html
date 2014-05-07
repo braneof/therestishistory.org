@@ -64,13 +64,8 @@ title: The Rest is History
         <img data-src="holder.js/900x500/auto/#{{ n }}{{ n }}{{ n }}:#{{ n }}a{{ n }}a{{ n }}a/text:{{ post.title }}" alt="{{ post.title }}">
         <div class="container">
           <div class="carousel-caption">
-            <h1>
-            {% if post.title %}
-              <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
-            {% endif %}
-            </h1>
             <p>{{ post.content }}</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Read more</a></p>
+            <p><a class="btn btn-lg btn-primary" href="{{ root_url }}{{ post.url }}" role="button">Read more</a></p>
           </div>
         </div>
       </div>
