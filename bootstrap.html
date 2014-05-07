@@ -55,13 +55,12 @@ title: The Rest is History
     </ol>
     <div class="carousel-inner">
     {% for post in site.posts limit:3 %}
-    {% if forloop.index == 1 %}
+      {% if forloop.index == 1 %}
       <div class="item active">
-    {% else %}
+      {% else %}
       <div class="item">
-    {% endif %}
-    {% assign n = 8 - forloop.index %}
-      <div class="item active">
+      {% endif %}
+      {% assign n = 8 - forloop.index %}
         <img data-src="holder.js/900x500/auto/#{{ n }}{{ n }}{{ n }}:#{{ n }}a{{ n }}a{{ n }}a/text:{{ post.title }}" alt="{{ post.title }}">
         <div class="container">
           <div class="carousel-caption">
