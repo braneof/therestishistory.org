@@ -14,7 +14,7 @@ audioFile: https://s3-us-west-2.amazonaws.com/therestishistory/audio/130803_0099
 
 <script>
     jwplayer("jwElement").setup({
-        file: "{{ audioFile }}",
+        file: "{{ page.audioFile }}",
         width: '100%',
         height: 30
     });
