@@ -5,3 +5,9 @@
 .site .meta {
   color: #aaa;
 }
+
+/* Bump up size of carousel excerpts, even when excerpt tag is used */
+.carousel-caption .entry-excerpt {
+  font-size: 21px;
+  line-height: 1.4;
+}
