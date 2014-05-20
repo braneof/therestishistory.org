@@ -26,6 +26,38 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
+  <div class="site">
   {{ content }}
+  </div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="javascripts/docs.min.js"></script>
+  <!-- Delete holder in production site -->
+  <script src='javascripts/holder.js'></script>
+  <script src='javascripts/jquery.scrollTo/1.4.11/jquery.scrollTo.min.js'></script>
+
+
+  <script>
+
+  $( document ).ready(function() {
+      $( "a.go-next" ).click(function( event ) {
+        if( $(this).data('description') === "Go" )
+          $.scrollTo({ top:600, left:0}, 500, {easing:"easeOutQuad"});
+        else if( $(this).data('description') === "About me" )
+          $.scrollTo({ top:1200, left:0}, 500, {easing:"easeOutQuad"});
+        else if( $(this).data('description') === "Oral histories" )
+          $.scrollTo({ top:1700, left:0}, 500, {easing:"easeOutQuad"});
+        else
+          $.scrollTo({ top:0, left:0}, 500, {easing:"easeOutQuad"});
+        event.preventDefault();
+      });
+  });
+
+  </script>
   </body>
 </html>
