@@ -1,1 +1,7 @@
 markdown: redcarpet
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      city: "Salt Lake City, UT"

@@ -3,10 +3,9 @@ layout: posts
 ---
 <script src="http://jwpsrv.com/library/0w8aDtpEEeOsKiIACrqE1A.js"></script>
 <div id="post">
-  {{ page.title }}
-  ================
+  <h1>{{ page.title }}</h1>
 
-  <p class="meta">24 Apr 2014 - Cleveland, OH</p>
+  <p class="meta">{{ page.date | date: '%B %d, %Y' }} - {{ page.city }}</p>
 
   <div id="jwElement"></div>
 
@@ -18,6 +17,7 @@ layout: posts
       });
   </script>
 
+  <p></p>
   {{ content }}
 </div>
 
