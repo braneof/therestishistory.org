@@ -10,7 +10,7 @@ title: Third post, to make a third slide
 
 <script>
     jwplayer("jwElement").setup({
-        file: "https://s3-us-west-2.amazonaws.com/therestishistory/audio/130803_0093.mp3",
+        file: "rtmp://sa4it37dwxbm5.cloudfront.net/cfx/st/130803_0093.mp3",
         width: 640,
         height: 30
     });
