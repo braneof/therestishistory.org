@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Liz Research
-audio: rtmp://sa4it37dwxbm5.cloudfront.net/cfx/st/Liz_Track01.mp3
+audio: Liz_Track01.mp3
 ---
 
 In 1977, Liz had a new baby boy and the prospects of a promising career, launched by a
