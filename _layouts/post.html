@@ -10,6 +10,7 @@ layout: posts
   <p class="meta">{{ page.date | date: '%B %d, %Y' }} - {{ site.city }}</p>
   {% endif %}
 
+  {% if page.audio %}
   <div class="row">
     <div class="col-xs-12 col-md-8">
       <div id="jwElement"></div>
@@ -23,6 +24,7 @@ layout: posts
       </script>
     </div>
   </div>
+  {% endif %}
 
   <p></p>
   {{ content }}
