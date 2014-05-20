@@ -1,5 +1,5 @@
 ---
-layout: post_new
+layout: post
 title: Liz Research
 audio: rtmp://sa4it37dwxbm5.cloudfront.net/cfx/st/Liz_Track01.mp3
 ---
