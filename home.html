@@ -70,7 +70,9 @@ title: The Rest is History
                 {{ post.title }}
               {% endif %}
               </h1>
-              <div class="entry-content">{{ post.excerpt }}</div>
+              <p>
+                <div class="entry-content">{{ post.excerpt }}</div>
+              </p>
             </p>
             <p><a class="btn btn-lg btn-primary" href="{{ root_url }}{{ post.url }}" role="button">Read more</a></p>
           </div>
