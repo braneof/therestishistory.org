@@ -29,6 +29,13 @@ layout: posts
   <p></p>
   {{ content }}
 </div>
+<div id="categories">
+  <h4>categories:
+  {% for category in page.categories %}
+    <a href="/categories#{{ category }}">{{ category }}</a> -
+  {% endfor %}
+  </h4>
+</div>
 
 <div id="related">
   <h2>Related Posts</h2>

@@ -11,3 +11,7 @@
   font-size: 21px;
   line-height: 1.4;
 }
+
+div .category {
+  display:none;
+}
