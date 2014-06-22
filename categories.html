@@ -5,7 +5,7 @@ scripts: categories.js
 ---
 <div id="home">
 
-  {% for category in site.categories %}
+  {% for category in site.categories order:ascending %}
   <div id="{{ category[0] }}" class="category">
   <h2>{{ category[0] }}</h2>
   <ul class="posts">
