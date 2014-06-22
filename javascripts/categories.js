@@ -1,4 +1,4 @@
 $(function() {
   var h=window.location.hash.replace('#', '');
-  document.getElementById(h).style.display = 'inline';
+  document.getElementById(h+"-ref").style.display = 'inline';
 });
