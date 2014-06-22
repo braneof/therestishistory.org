@@ -2,6 +2,7 @@
 layout: post
 title: Liz Research
 audio: Liz_Track01.mp3
+tags: medical utah polio
 ---
 
 In 1977, Liz had a new baby boy and the prospects of a promising career, launched by a
