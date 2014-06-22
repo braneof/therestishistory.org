@@ -4,6 +4,7 @@ layout: posts
 <script src="http://jwpsrv.com/library/0w8aDtpEEeOsKiIACrqE1A.js"></script>
 <div id="post">
   <h1>{{ page.title }}</h1>
+  <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</span>
   {% if page.city %}
   <p class="meta">{{ page.date | date: '%B %d, %Y' }} - {{ page.city }}</p>
   {% else %}
