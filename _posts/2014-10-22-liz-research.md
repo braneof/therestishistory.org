@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Liz Research
+title: Elizabeth Hammond Medical Research
 audio: Liz_Track01.mp3
 tags: medical utah polio
 ---
