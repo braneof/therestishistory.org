@@ -4,9 +4,10 @@ It is automatically transformed by "Jekyll":http://github.com/mojombo/jekyll int
 
 h1. License
 
-The following directories and their contents are Copyright Brandon Evans. You may not reuse anything therein without my permission:
+The following directories and their contents are copyrighted by Brandon Evans or their original copyright owner. You may not reuse anything therein without written permission from me or the original copyright owner:
 
 * _posts/
 * images/
+* about/
 
 All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please. I forked this repository from http://github.com/mojombo/mojombo.github.io.
