@@ -52,31 +52,80 @@ title: The Rest is History
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner">
-    {% for post in site.posts limit:3 %}
-      {% if forloop.index == 1 %}
       <div class="item active">
-      {% else %}
-      <div class="item">
-      {% endif %}
-      {% capture n %}{{ 8 | minus:forloop.index }}{% endcapture %}
-        <img data-src="holder.js/900x500/auto/#{{ n }}{{ n }}{{ n }}:#{{ n }}a{{ n }}a{{ n }}a/text:{{ post.title }}" alt="{{ post.title }}">
+        <img src="holder.js/900x500/auto/#" alt="Polio" width="900" height="500">
         <div class="container">
           <div class="carousel-caption">
             <p>
               <h1 class="entry-title">
-              {% if post.title %}
-                {{ post.title }}
-              {% endif %}
+                POLIO
               </h1>
-              <div class="entry-excerpt">{{ post.excerpt }}</div>
+              <div class="entry-excerpt">Stories about battling and surviving a terrifying disease</div>
             </p>
-            <p><a class="btn btn-lg btn-primary" href="{{ root_url }}{{ post.url }}" role="button">Read more</a></p>
+            <p><a class="btn btn-lg btn-primary" href="2014/10/22/dixie-edwards-polio.html" role="button">Read more</a></p>
           </div>
         </div>
       </div>
-    {% endfor %}
+      <div class="item">
+        <img src="holder.js/900x500/auto/#" alt="Medical Research" width="900" height="500">
+        <div class="container">
+          <div class="carousel-caption">
+            <p>
+              <h1 class="entry-title">
+                MEDICAL RESEARCH
+              </h1>
+              <div class="entry-excerpt">The amazing transformation of medical care through one academic community hospital</div>
+            </p>
+            <p><a class="btn btn-lg btn-primary" href="2014/10/22/liz-research.html" role="button">Read more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="holder.js/900x500/auto/#" alt="The Break" width="900" height="500">
+        <div class="container">
+          <div class="carousel-caption">
+            <p>
+              <h1 class="entry-title">
+                THE BREAK
+              </h1>
+              <div class="entry-excerpt">Sometimes it means the difference between failure and success.</div>
+            </p>
+            <p><a class="btn btn-lg btn-primary" href="2014/10/22/rob-corcoran.html" role="button">Read more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="holder.js/900x500/auto/#" alt="World War II" width="900" height="500">
+        <div class="container">
+          <div class="carousel-caption">
+            <p>
+              <h1 class="entry-title">
+                WORLD WAR II
+              </h1>
+              <div class="entry-excerpt">Coming soon! Remarkable stories from every front during the 20th Century's epic war</div>
+            </p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Read more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="holder.js/900x500/auto/#" alt="Latest post" width="900" height="500">
+        <div class="container">
+          <div class="carousel-caption">
+            <p>
+              <h1 class="entry-title">
+                SEE THE LATEST POST
+              </h1>
+              <div class="entry-excerpt"></div>
+            </p>
+            <p><a class="btn btn-lg btn-primary" href="2014/10/22/rob-corcoran.html" role="button">Read more</a></p>
+          </div>
+        </div>
+      </div>
     </div>
     <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
     <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
